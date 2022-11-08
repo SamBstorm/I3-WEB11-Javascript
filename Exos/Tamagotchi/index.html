@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagotchi!</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div id="create-form">
+        <div><label for="name">Nom : </label><input type="text" id="name" placeholder="Entrer un nom..."></div>
+        <div><label for="color">Couleur : </label>
+            <select name="color" id="color">
+                <option value="red">Rouge</option>
+                <option value="blue">Bleu</option>
+                <option value="pink">Rose</option>
+                <option value="yellow">Jaune</option>
+                <option value="green">Vert</option>
+            </select>
+        </div>
+        <div><button id="validate-form-btn">Valider</button></div>
+    </div>
+    <div id="tama-container">
+        <h1 id="tama-name"></h1>
+        <h3 id="tama-days"></h3>
+        <div id="tama-circle"></div>
+    </div>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
