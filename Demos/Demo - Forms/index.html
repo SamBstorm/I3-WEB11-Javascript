@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Démonstration formulaire</title>
+</head>
+<body>
+    <form name="registerform" method="post" action="http://monserver/mapage.php">
+        <div>
+            <label for="lastname">Nom de famille : </label>
+            <input name="lastname" id="lastname" type="text">
+        </div>
+        <div>
+            <label for="firstname">Prénom : </label>
+            <input name="firstname" id="firstname" type="text">
+            <div id="firstname_error"></div>
+        </div>
+        <div>
+            <label for="birthdate">Date de naissance : </label>
+            <input name="birthdate" id="birthdate" type="date">
+        </div>
+        <fieldset>
+            <legend>Genre : </legend>
+            <div>
+                <label for="gender_f">Femme : </label>
+                <input name="gender" id="gender_f" type="radio" value="female">
+                <label for="gender_m">Homme : </label>
+                <input name="gender" id="gender_m" type="radio" value="male">
+                <label for="gender_o">Autre : </label>
+                <input name="gender" id="gender_o" type="radio" value="other">
+            </div>
+        </fieldset>
+        <div>
+            <label for="email">Email : </label>
+            <input name="email" id="email" type="email">
+        </div>
+        <div>
+            <label for="phone">Téléphone : </label>
+            <input name="phone" id="phone" type="tel">
+        </div>
+        <div>
+            <button type="submit">Enregistrer</button>
+            <button type="reset">Remise à zéro</button>
+        </div>
+    </form>
+</body>
+<script src="./scripts/main.js"></script>
+</html>
